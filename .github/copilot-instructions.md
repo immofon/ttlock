@@ -95,4 +95,4 @@ for {
 }
 ```
 
-After each task, please update the relevant documentation files to reflect any changes made to the codebase, especially the .github/copilot-instructions.md file to ensure that Copilot has the most up-to-date information about the project structure and functionality.
+After each task, please update the relevant documentation files to reflect any changes made to the codebase, especially the .github/copilot-instructions.md and README.md file to ensure that Copilot has the most up-to-date information about the project structure and functionality.
