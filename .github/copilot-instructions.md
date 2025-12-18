@@ -39,10 +39,17 @@ The codebase is a pure Go implementation with no external dependencies.
 
 ## Development Workflow
 
-- **Dependencies**: Standard library only. No `go.mod` dependencies to manage.
+- **Dependencies**: The core library uses standard library only. The CLI (`cmd/ttlock`) uses `github.com/urfave/cli/v2`.
 - **Testing**: There are currently **NO** unit tests (`_test.go`).
   - _Action_: When adding new features, consider adding a test file if possible, or verify manually.
 - **Formatting**: Follow standard Go conventions (`gofmt`).
+
+## CLI
+
+The CLI is located in `cmd/ttlock`.
+
+- **Structure**: `main.go` initializes the app. Subcommands are in separate files (e.g., `hello.go`).
+- **Framework**: Uses `github.com/urfave/cli/v2`.
 
 ## Example Usage
 

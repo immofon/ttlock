@@ -161,6 +161,16 @@ if lock.SupportsFeature(ttlock.LockFeatureFingerprint) {
 
 See `feature.go` for a full list of `LockFeature` constants.
 
+## CLI
+
+The project includes a CLI tool located in `cmd/ttlock`.
+
+To build and run the CLI:
+
+```bash
+go run ./cmd/ttlock hello
+```
+
 ## License
 
 [MIT](LICENSE)
