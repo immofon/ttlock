@@ -48,8 +48,14 @@ The codebase is a pure Go implementation with no external dependencies.
 
 The CLI is located in `cmd/ttlock`.
 
-- **Structure**: `main.go` initializes the app. Subcommands are in separate files (e.g., `hello.go`).
+- **Structure**: `main.go` initializes the app. Subcommands are in separate files (e.g., `hello.go`, `commands.go`).
 - **Framework**: Uses `github.com/urfave/cli/v2`.
+- **Commands**:
+  - `lock`: Get lock details.
+  - `list-lock`: List locks.
+  - `list-passcode`: List passcodes.
+  - `genpass`: Generate random passcode.
+  - `sendkey`: Send eKey.
 
 ## Example Usage
 

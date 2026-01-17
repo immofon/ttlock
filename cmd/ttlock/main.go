@@ -53,6 +53,11 @@ func main() {
 		},
 		Commands: []*cli.Command{
 			helloCmd,
+			lockCmd,
+			listLockCmd,
+			listPasscodeCmd,
+			genPassCmd,
+			sendKeyCmd,
 		},
 	}
 

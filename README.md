@@ -168,8 +168,36 @@ The project includes a CLI tool located in `cmd/ttlock`.
 To build and run the CLI:
 
 ```bash
-go run ./cmd/ttlock hello
+go run ./cmd/ttlock [command] [flags]
 ```
+
+Available commands:
+
+- `lock`: Get lock details
+  - `-id`: Lock ID
+- `list-lock`: List locks
+  - `-n`: Page number (default: 1)
+  - `-s`: Page size (default: 20)
+  - `-a`: Lock alias
+  - `-g`: Group ID
+- `list-passcode`: List passcodes
+  - `-id`: Lock ID
+  - `-n`: Page number (default: 1)
+  - `-s`: Page size (default: 20)
+  - `-o`: Order by (1:desc, 2:asc) (default: 1)
+  - `-search` / `-q`: Search string
+- `genpass`: Generate random passcode
+  - `-id`: Lock ID
+  - `-t`: Passcode type
+  - `-n`: Passcode name
+  - `-s`: Start date (YYYYMMDD-HH)
+  - `-e`: End date (YYYYMMDD-HH)
+- `sendkey`: Send eKey
+  - `-id`: Lock ID
+  - `-to`: Receiver username
+  - `-n`: Key name
+  - `-s`: Start date (YYYYMMDD-HH)
+  - `-e`: End date (YYYYMMDD-HH)
 
 ## License
 
